@@ -37,7 +37,7 @@ for(let val of tasks){
     <div class="card-body">
     <h5 class="card-title">${val.taskName}</h5>
     <p class="likes">${val.importance}</p>
-    <p class="bin btn-success likeBtn">Priority</p>
+    <p class="btn btn-success likeBtn">Priority</p>
     <p class="card-text">${val.description}</p>
     </div>
     </div>
@@ -49,10 +49,10 @@ for(let val of tasks){
 let btns = document.getElementsByClassName("likeBtn");
 
 for(let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click",function(){
-        tasks[i].like++;
-        console.log(tasks[i].like);
-        document.getElementsByClassName("likes")[i].innerHTML = tasks[i].like;
+    btns[i].addEventListener("click", function(){
+        tasks[i].importance++;
+        console.log(tasks[i].importance);
+        document.getElementsByClassName("likes")[i].innerHTML = tasks[i].importance;
     })
 }
 
