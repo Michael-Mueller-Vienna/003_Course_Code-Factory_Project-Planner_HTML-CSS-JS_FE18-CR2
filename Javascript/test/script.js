@@ -62,7 +62,7 @@ for(let i = 0; i < btns.length; i++) {
         } else if (tasks[i].importance < 6){
             document.getElementsByClassName("priority")[i].style.backgroundColor = "red";
         } else {
-            document.getElementsByClassName("priority")[i].style.backgroundColor = "black"; alert("You are death!");
+            document.getElementsByClassName("priority")[i].style.backgroundColor = "black"; alert("You Failed!");
         }
     })
 }
@@ -72,10 +72,10 @@ for(let i = 0; i < btns.length; i++) {
 // but this isnt working. I dont know how to solve this sorry.
 
 
-function sorting () {
-      let sortedTasks = tasks.sort(function(a, b) {            
-      return b.importance - a.importance;  
-  })
+// function sorting () {
+//       let sortedTasks = tasks.sort(function(a, b) {            
+//       return b.importance - a.importance;  
+//   })
 //  for(let val of sortedTasks){
 //   document.getElementById("result").innerHTML += `
 //   <div>
@@ -90,6 +90,6 @@ function sorting () {
 //   </div>
 //   </div>`
 // }
-}
-  document.getElementById("sortPriority").addEventListener("click",sorting); 
+// }
+//   document.getElementById("sortPriority").addEventListener("click",sorting); 
 
